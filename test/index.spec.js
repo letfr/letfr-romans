@@ -4,6 +4,16 @@ var assert = chai.assert;
 const convert = require('../index');
 
 describe('intToRoman()', function() {
+  it('Deve lançar um erro', () => {
+    assert(convert.intToRoman(), 'Está faltando parâmetro!');
+    assert(convert.intToRoman(""), 'Está faltando parâmetro!');
+  });
+  it('Deve lançar um erro', () => {
+    assert(convert.intToRoman(0), 'Não existe 0 em algarismos romanos!');
+  });  
+  it('Deve lançar um erro', () => {
+    assert(convert.intToRoman("abc"), 'Digite apenas números!');
+  });  
   it('Deve receber uma string e retornar um int', () => {
     assert(convert.intToRoman(6), 'VI');
   });
@@ -21,6 +31,13 @@ describe('intToRoman()', function() {
   });
 });
 describe('romanToInt()', function() {
+  it('Deve lançar um erro', () => {
+    assert(convert.romanToInt(), 'Está faltando parâmetro!');
+    assert(convert.romanToInt(""), 'Está faltando parâmetro!');
+  });
+  it('Deve lançar um erro', () => {
+    assert(convert.romanToInt(1234), 'Digite apenas letras!');
+  }); 
   it('Deve receber um int e retornar uma string', () => {
     assert(convert.romanToInt('LXXXVIII'), 88);
   });
