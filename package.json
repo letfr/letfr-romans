@@ -1,0 +1,35 @@
+{
+  "name": "letfr-romans",
+  "version": "1.0.0",
+  "description": "Convert decimal to roman numerals or roman numerals to decimal",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "assert": "^1.4.1",
+    "eslint": "^5.5.0",
+    "nyc": "^13.0.1"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leticianfaria/letfr-romans.git"
+  },
+  "keywords": [
+    "romans",
+    "numeral"
+  ],
+  "author": "Leticia Faria",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leticianfaria/letfr-romans/issues"
+  },
+  "homepage": "https://github.com/leticianfaria/letfr-romans#readme"
+}
